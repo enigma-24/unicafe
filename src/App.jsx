@@ -10,12 +10,10 @@ export default function App() {
 		<>
 			<h1>give feedback</h1>
 			<button onClick={() => setGood((good) => good + 1)}>good</button>
-			<button onClick={() => setNeutral(neutral => neutral + 1)}>neutral</button>
-			<button onClick={() => setBad(bad => bad + 1)}>bad</button>
-			<h1>statistics</h1>
-			<p>good {good}</p>
-			<p>neutral {neutral}</p>
-			<p>bad {bad}</p>
+			<button onClick={() => setNeutral((neutral) => neutral + 1)}>
+				neutral
+			</button>
+			<button onClick={() => setBad((bad) => bad + 1)}>bad</button>
 			<Statistics good={good} neutral={neutral} bad={bad} />
 		</>
 	);
