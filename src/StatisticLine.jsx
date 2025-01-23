@@ -1,7 +1,12 @@
 export default function StatisticLine({ text, value }) {
 	return (
-		<p>
-			{text} {value}
-		</p>
+		<table>
+			<tbody>
+				<tr>
+					<td style={{ width: '70px' }}>{text}</td>
+					<td>{value}</td>
+				</tr>
+			</tbody>
+		</table>
 	);
 }
